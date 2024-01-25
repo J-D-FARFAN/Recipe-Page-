@@ -146,7 +146,7 @@ hr{
     }
 }
 
-@media screen and (max-width: 490px){
+@media screen and (max-width: 390px){
     .title{
         font-size: 1.5rem;
     }
@@ -154,6 +154,9 @@ hr{
         font-size: 16px;
     }
     .itms-list{
+        font-size: 14px;
+    }
+    td{
         font-size: 14px;
     }
 }
