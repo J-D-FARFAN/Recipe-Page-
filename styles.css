@@ -1,0 +1,159 @@
+@font-face {
+    font-family: OutFit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Young;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+.margin-list{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.padding-list{
+    padding-left: 1rem;
+}
+
+.itms-list{
+    font-size: 16px;
+    letter-spacing: .4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.colors{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+:root{
+    --fontOne: OutFit;
+    --fontTwo: Young;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f3e6d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain-all{
+    width: 840px;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.omelette{
+    width: 100%;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.title{
+    font-family: var(--fontTwo);
+    margin: 2rem 0 1rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+}
+
+.txt{
+    font-size: 18px;
+    letter-spacing: .4px;
+    margin-bottom: 2rem;
+}
+
+.contain-preparations{
+    background-color: #7b284f18;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.contain-preparations .titel-prepration{
+    font-size: 19px;
+    margin-bottom: 1rem;
+    font-family: var(--fontOne);
+    font-weight: 700;
+    color: #7b284f;
+}
+
+::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.contain-ingredients{
+    margin-bottom: 2rem;
+}
+
+.second-title{
+    color: hsl(14, 45%, 36%);
+    font-size: 1.5rem;
+    font-family: var(--fontTwo);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+.contain-instructions{
+    margin: 3rem 0;
+}
+
+.contain-nutrition{margin-top: 3rem;}
+
+.contain-nutrition table{
+    font-family: var(--fontOne);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 1rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+hr{
+    border: .1px solid hsl(30, 18%, 87%);
+
+}
+
+
+@media screen and (max-width: 490px){
+    .title{
+        font-size: 2rem;
+    }
+    .contain-all{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .title{
+        font-size: 1.5rem;
+    }
+    .txt{
+        font-size: 16px;
+    }
+    .itms-list{
+        font-size: 14px;
+    }
+}
